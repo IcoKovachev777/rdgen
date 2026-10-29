@@ -134,15 +134,15 @@ jobs:
         if: ${{ env.VERSION != 'master' }}
         uses: actions/checkout@v4
         with:
-          repository: rustdesk/rustdesk
-          ref: refs/tags/${{ env.VERSION }}
+          repository: IcoKovachev777/rustdesk
+          ref: v1.5.0-patch
           submodules: recursive
 
       - name: Checkout source code
         if: ${{ env.VERSION == 'master' }}
         uses: actions/checkout@v4
         with:
-          repository: rustdesk/rustdesk
+          repository: IcoKovachev777/rustdesk
           submodules: recursive
 
       - name: Set custom app version
